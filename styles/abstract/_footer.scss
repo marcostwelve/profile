@@ -1,0 +1,13 @@
+.footer {
+    width: 100vw;
+    margin-top: 3rem;
+    padding: 1em 0; 
+    background-color: $cor-secundaria;
+    color: $cor-principal;
+    text-align: center;
+
+    .footer__text {
+        font-size: 1em;
+        font-weight: 700;
+    }
+}

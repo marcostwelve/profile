@@ -1,0 +1,175 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #E9F8F9;
+  color: #181823;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #181823;
+  color: #E9F8F9;
+}
+
+.profile {
+  width: 100vw;
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.profile .profile__title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+.profile .profile__img {
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid #181823;
+  border-radius: 50%;
+}
+.profile .profile__data {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .profile .profile__data {
+    padding: 2em;
+  }
+}
+.profile .profile__user-info {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border: 2px solid #181823;
+  border-radius: 8px;
+}
+.profile .profile__user-info .profile__data-user {
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+.profile .label__bio-user {
+  font-size: 1em;
+  font-weight: 700;
+}
+.profile .user__data-bio {
+  padding: 1em;
+  font-weight: 700;
+  border: 2px solid #181823;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    margin-top: 50px;
+    width: 50vw;
+    border: 2px solid #181823;
+    border-radius: 8px;
+  }
+}
+
+.new__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.new__form .form__title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+.new__form .profile__img {
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid #181823;
+  border-radius: 50%;
+}
+.new__form .form {
+  display: flex;
+  padding: 4em 1em;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #f1f1f1;
+}
+@media screen and (min-width: 768px) {
+  .new__form .form {
+    border-radius: 8px;
+    border: 2px solid #181823;
+  }
+}
+.new__form .data {
+  display: flex;
+  flex-direction: column;
+}
+.new__form .label__data {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.new__form .user__data {
+  width: auto;
+  padding: 1em;
+  outline: none;
+  border: 2px solid #181823;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.new__form .btn__update {
+  padding: 3%;
+  margin: 0 auto;
+  width: 54%;
+  background-color: #181823;
+  color: #E9F8F9;
+  border: 2px solid #E9F8F9;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.new__form .btn__update:hover {
+  background-color: #E9F8F9;
+  color: #181823;
+  border: 2px solid #181823;
+}
+@media screen and (min-width: 768px) {
+  .new__form .btn__update {
+    width: 30%;
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .new__form {
+    width: 50vw;
+  }
+}
+
+.footer {
+  width: 100vw;
+  margin-top: 3rem;
+  padding: 1em 0;
+  background-color: #181823;
+  color: #E9F8F9;
+  text-align: center;
+}
+.footer .footer__text {
+  font-size: 1em;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

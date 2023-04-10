@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Cadastro de usuário</h1>
+    </header>
+    <main>
+        <section>
+            <div class="profile">
+                <h3 class="profile__title">Seu perfil</h3>
+                <img src="https://th.bing.com/th/id/OIP.m0zBW9zoAEURFJksBmnnBAHaFl?pid=ImgDet&w=945&h=712&rs=1" alt="Imagem de perfil" title="Usuário" class="profile__img"/>
+
+                <div class="profile__data">
+                    <p class="profile__user-info">Nome <span class="profile__data-user" id="current_name">Marcos</span></p>
+                    <p class="profile__user-info">Idade <span class="profile__data-user" id="current_age">26</span> anos</p>
+                    <p class="profile__user-info">Local <span class="profile__data-user" id="current_local">São Paulo</span></p>
+
+                    <label for="current_bio" class="label__bio-user">Biografia</label>
+                    <textarea id="current_bio" class="user__data-bio" cols="30" rows="10" placeholder="Mensagem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, asperiores quibusdam! Obcaecati dolores voluptatum aperiam mollitia voluptatem, magni cupiditate facere minus officiis amet quod dicta aliquam molestias blanditiis. Magni, facilis!
+                    </textarea>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="new__form">
+                <h3 class="form__title">Atualizar perfil</h3>
+
+                <form class="form">
+                    <div class="data">
+                        <label for="new_name" class="label__data">Nome</label>
+                        <input id="new_name" class="user__data" type="text" value="" minlength="3" required placeholder="Nome" />
+                    </div>
+
+                    <div class="data">
+                        <label for="new_age" class="label__data">Idade</label>
+                        <input id="new_age" class="user__data" type="number" value=""  min="10" required  placeholder="Idade"/>
+                    </div>
+
+                    <div class="data">
+                        <label for="new_local" class="label__data">Localização</label>
+                        <input type="text" id="new_local" class="user__data" placeholder="Cidade" required />
+                    </div>
+
+                    <div class="data">
+                        <label for="new_bio" class="label__data">Biografia</label>
+                        <textarea id="new_bio" class="user__data" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    </div>
+                    <button class="btn__update">Atualizar dados</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text"> 2023 - &copy; Desenvolvido por Maurício Marcos </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/getDatas.js"></script>
+</body>
+</html>

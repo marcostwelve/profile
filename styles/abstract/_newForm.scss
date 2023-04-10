@@ -1,0 +1,78 @@
+.new__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .form__title {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+    }
+
+    .profile__img {
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid $cor-secundaria;
+        border-radius: 50%;
+    }
+
+    .form {
+        display: flex;
+        padding: 4em 1em;
+        flex-direction: column;
+        gap: 2em;
+        background-color: $cor-form;
+
+        @media screen and (min-width: 768px) {
+            border-radius: 8px;
+            border: 2px solid $cor-secundaria;
+        }
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label__data {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .user__data {
+        width: auto;
+        padding: 1em;
+        outline: none;
+        border: 2px solid $cor-secundaria;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .btn__update {
+        padding: 3%;
+        margin: 0 auto;
+        width: 54%;
+        background-color: $cor-secundaria;
+        color: $cor-principal;
+        border: 2px solid $cor-principal;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $cor-principal;
+            color: $cor-secundaria;
+            border: 2px solid $cor-secundaria;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 30%;
+            padding: 2%;
+        }
+    }
+     @media screen and (min-width: 768px) {
+        width: 50vw;
+     }
+}
