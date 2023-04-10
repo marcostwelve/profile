@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Uma siomples página, para atualizar um perfil fictício de usuário.
 
-- [visite o projeto online]()
+- [visite o projeto online](https://marcostwelve.github.io/profile/)
 
 ## :memo: Licença
 
