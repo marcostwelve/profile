@@ -10,5 +10,4 @@ const botaoAtualizar = document.querySelector('.btn__update');
 botaoAtualizar.addEventListener('click', (e) => {
     e.preventDefault();
     updateUser(nomeAtual, idadeAtual, localizacaoAtual, bioAtual);
-    console.log(bioAtual);
 });

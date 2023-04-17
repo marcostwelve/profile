@@ -10,7 +10,8 @@ function updateUser(nome, idade, localizacao, bio) {
     
     
     if(novoNome.value  == "" || novaIdade.value == "" || novaLocalizacao.value == "" || novaBio.value == "") {
-        alert("Os campos não podem estar vazios!");
+        modalFailed();
+        clearField();
     }
 
     else {
@@ -19,17 +20,16 @@ function updateUser(nome, idade, localizacao, bio) {
         idade.textContent = novaIdade.value;
         localizacao.textContent = novaLocalizacao.value;
         bio.value = novaBio.value;
+        modalSucess();
         clearField();
     }
 
 }
 
-
-//Funçao Para limpar os campos de atualização
+//Função Para limpar os campos de atualização
 function clearField() {
         novoNome.value = "";
         novaIdade.value  = "";
         novaLocalizacao.value = "";
         novaBio.value = "";
 }
-
